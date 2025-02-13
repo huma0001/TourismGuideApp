@@ -36,12 +36,12 @@ public class TouristRepository {
 
         for(TouristAttraction toursAtr : touristAttractions){
             if(toursAtr.getName().equalsIgnoreCase(name)){
-                return temp = toursAtr;
+                 temp = toursAtr;
             }
 
         }
 
-        return null;
+        return temp;
     }
 
 
