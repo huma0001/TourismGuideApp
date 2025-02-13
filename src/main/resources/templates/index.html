@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Velkommen til turistguiden for København</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tourist Guide</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
 </head>
 <body>
+
+    <h1>Welcome to the Tourist Guide!</h1>
+    <a href="http://localhost:8080/attractions/all">View Attractions</a>
 
 </body>
 </html>

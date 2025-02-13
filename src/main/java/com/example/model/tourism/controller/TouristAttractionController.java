@@ -18,6 +18,14 @@ import java.util.List;
     this.touristAttractionService = touristAttractionService;
     }
 
+    /* Skal fixes
+    @GetMapping("homepage")
+    public String homePage() {
+        return "index";
+    }
+     */
+
+
     @GetMapping("/all")
     public ResponseEntity<List<TouristAttraction>> getAllTouristAttractions(){
         List<TouristAttraction> touristAttractions = touristAttractionService.getAllAttractions();
