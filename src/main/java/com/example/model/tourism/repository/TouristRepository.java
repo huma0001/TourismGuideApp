@@ -52,7 +52,7 @@ public class TouristRepository {
                 return updatedTouristAttraction;
             }
         }
-        return null; // Hvis ikke fundet
+        return null;
     }
 
 

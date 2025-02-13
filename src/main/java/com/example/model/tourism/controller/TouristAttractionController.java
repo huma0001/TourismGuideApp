@@ -37,6 +37,8 @@ import java.util.List;
         return new ResponseEntity<>(newTouristAttraction, HttpStatus.CREATED);
     }
 
+
+    //Skal laves
     @PutMapping("/update/{name}")
     public ResponseEntity<TouristAttraction> updateAttraction(
             @PathVariable String name,
@@ -45,17 +47,6 @@ import java.util.List;
         TouristAttraction updatedAttraction = touristAttractionService.updateTouristAttraction(name, updatedTouristAttraction);
         return new ResponseEntity<>(updatedAttraction, HttpStatus.OK);
     }
-
-
-    // SKal laves
-    /*@PutMapping("/update")
-    public ResponseEntity<TouristAttraction> updateAttraction(@RequestBody TouristAttraction updatedTouristAttraction, @RequestParam String name) {
-        // Update the tourist attraction based on the provided 'name'
-        TouristAttraction updatedAttraction = touristAttractionService.updateTouristAttraction(name, updatedTouristAttraction);
-
-        // Return the updated resource with HTTP Status OK
-        return new ResponseEntity<>(updatedAttraction, HttpStatus.OK);
-    }*/
 
     @DeleteMapping("{name}")
     @ResponseBody
