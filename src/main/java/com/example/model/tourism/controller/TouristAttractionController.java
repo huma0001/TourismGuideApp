@@ -24,12 +24,11 @@ import java.util.List;
         return new ResponseEntity<>(touristAttractions, HttpStatus.OK);
     }
 
-    @GetMapping("/{name}")
-    public ResponseEntity<TouristAttraction> getTouristAttractionByName(@PathVariable String name){
+    @GetMapping("/search")
+    public ResponseEntity<TouristAttraction> getTouristAttractionByName(@RequestParam String name){
         TouristAttraction touristAttraction = touristAttractionService.findAttractionByName(name);
         return new ResponseEntity<>(touristAttraction, HttpStatus.OK);
     }
-
 
 
     @PostMapping("/add")
