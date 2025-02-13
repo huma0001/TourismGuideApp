@@ -18,7 +18,7 @@ import java.util.List;
     this.touristAttractionService = touristAttractionService;
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<List<TouristAttraction>> getAllTouristAttractions(){
         List<TouristAttraction> touristAttractions = touristAttractionService.getAllAttractions();
         return new ResponseEntity<>(touristAttractions, HttpStatus.OK);
@@ -47,6 +47,7 @@ import java.util.List;
         TouristAttraction updatedAttraction = touristAttractionService.updateTouristAttraction(name, updatedTouristAttraction);
         return new ResponseEntity<>(updatedAttraction, HttpStatus.OK);
     }
+
 
     @DeleteMapping("{name}")
     @ResponseBody
