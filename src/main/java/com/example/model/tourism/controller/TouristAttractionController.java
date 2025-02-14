@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
+//Skal have en base URL før HTML virker
     @RequestMapping("/attractions")
     public class TouristAttractionController {
     private final TouristAttractionService touristAttractionService;
@@ -17,14 +18,6 @@ import java.util.List;
     public TouristAttractionController(TouristAttractionService touristAttractionService){
     this.touristAttractionService = touristAttractionService;
     }
-
-    /* Skal fixes
-    @GetMapping("homepage")
-    public String homePage() {
-        return "index";
-    }
-     */
-
 
     @GetMapping("/all")
     public ResponseEntity<List<TouristAttraction>> getAllTouristAttractions(){
