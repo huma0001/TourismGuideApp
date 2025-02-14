@@ -15,9 +15,12 @@ public class TouristRepository {
     }
 
     public void touristAttractionsPopulate(){
-        touristAttractions.add(new TouristAttraction("Eiffel Tower", "Iconic iron tower offering stunning city views."));
-        touristAttractions.add(new TouristAttraction("Great Wall of China", "Ancient wall stretching across breathtaking landscapes."));
-        touristAttractions.add(new TouristAttraction("Machu Picchu", "Mystical Incan city nestled in the Andes."));
+        touristAttractions.add(new TouristAttraction("Tivoli", "Historisk forlystelsespark med rutsjebaner, smukke haver og underholdning."));
+        touristAttractions.add(new TouristAttraction("Den Lille Havfrue", "Ikonisk bronzestatue inspireret af H.C. Andersens eventyr."));
+        touristAttractions.add(new TouristAttraction("Nyhavn", "Farverig havnepromenade med restauranter, barer og historiske skibe."));
+        touristAttractions.add(new TouristAttraction("Rosenborg Slot", "Renæssanceslot, der huser de danske kronjuveler og kongelige skatte."));
+        touristAttractions.add(new TouristAttraction("Christiansborg Slot", "Regeringspalads med kongelige repræsentationslokaler og tårn med udsigt."));
+        touristAttractions.add(new TouristAttraction("Rundetårn", "Historisk tårn fra 1600-tallet med en spiralrampe og flot udsigt over byen."));
     }
 
 

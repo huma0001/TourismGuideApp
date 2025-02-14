@@ -56,6 +56,4 @@ import java.util.List;
         touristAttractionService.deleteTouristAttraction(name);
         return "Tourist attraction with name " + name + " has been deleted.";
     }
-
-
 }

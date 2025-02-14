@@ -1,6 +1,65 @@
-h1{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     text-align: center;
-    font-size: large;
-    font-weight: bold;
-    border: black solid 2px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.attractions {
+    background: white;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.attraction {
+    background: #e9ecef;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.attraction img {
+    width: 120px; /* Reduceret bredde for bedre layout */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.attraction p {
+    font-size: 1rem;
+    flex: 1;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    text-decoration: underline;
 }
