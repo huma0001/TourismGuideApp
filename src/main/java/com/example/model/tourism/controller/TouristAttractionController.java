@@ -55,7 +55,7 @@ public class TouristAttractionController {
 
     //POST attractions/update
     //Skal laves om til POST...
-    @PutMapping("/update/{name}")
+    @PostMapping("/update/{name}")
     public ResponseEntity<TouristAttraction> updateAttraction(@PathVariable String name, @RequestBody TouristAttraction updatedTouristAttraction) {
         TouristAttraction updatedAttraction = touristAttractionService.updateTouristAttraction(name, updatedTouristAttraction);
         return new ResponseEntity<>(updatedAttraction, HttpStatus.OK);
