@@ -7,16 +7,17 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+
 import java.util.List;
 
 @Controller
 //Skal have en base URL før HTML virker
-    @RequestMapping("/attractions")
-    public class TouristAttractionController {
+@RequestMapping("/attractions")
+public class TouristAttractionController {
     private final TouristAttractionService touristAttractionService;
 
     public TouristAttractionController(TouristAttractionService touristAttractionService){
-    this.touristAttractionService = touristAttractionService;
+        this.touristAttractionService = touristAttractionService;
     }
 
     @GetMapping("/all")
@@ -41,17 +42,13 @@ import java.util.List;
 
     //Skal laves
     @PutMapping("/update/{name}")
-    public ResponseEntity<TouristAttraction> updateAttraction(
-            @PathVariable String name,
-            @RequestBody TouristAttraction updatedTouristAttraction) {
-
+    public ResponseEntity<TouristAttraction> updateAttraction(@PathVariable String name, @RequestBody TouristAttraction updatedTouristAttraction) {
         TouristAttraction updatedAttraction = touristAttractionService.updateTouristAttraction(name, updatedTouristAttraction);
         return new ResponseEntity<>(updatedAttraction, HttpStatus.OK);
     }
 
 
-    @DeleteMapping("{name}")
-    @ResponseBody
+    @DeleteMapping("{name}") @ResponseBody
     public String deleteAttraction(@PathVariable String name) {
         touristAttractionService.deleteTouristAttraction(name);
         return "Tourist attraction with name " + name + " has been deleted.";
