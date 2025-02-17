@@ -64,10 +64,10 @@ public class TouristAttractionController {
 
     //POST attractions/delete/{name}
     //Skal laves om til POST...
-    @DeleteMapping("{name}") @ResponseBody
-    public String deleteAttraction(@PathVariable String name) {
+    @PostMapping("/delete/{name}")
+    public ResponseEntity<Void> deleteAttraction(@PathVariable String name) {
         touristAttractionService.deleteTouristAttraction(name);
-        return "Tourist attraction with name " + name + " has been deleted.";
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
 
