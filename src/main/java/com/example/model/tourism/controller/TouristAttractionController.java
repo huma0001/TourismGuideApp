@@ -53,4 +53,14 @@ public class TouristAttractionController {
         touristAttractionService.deleteTouristAttraction(name);
         return "Tourist attraction with name " + name + " has been deleted.";
     }
+
+    @GetMapping("/{name}/tags")
+    public ResponseEntity<List<String>> getAttractionTags(@PathVariable String name) {
+        TouristAttraction attraction = touristAttractionService.findAttractionByName(name);
+        if (attraction != null) {
+            return new ResponseEntity<>(attraction.getTags(), HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
 }

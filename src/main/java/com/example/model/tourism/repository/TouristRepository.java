@@ -15,12 +15,12 @@ public class TouristRepository {
     }
 
     public void touristAttractionsPopulate(){
-        touristAttractions.add(new TouristAttraction("Tivoli", "Historisk forlystelsespark med rutsjebaner, smukke haver og underholdning."));
-        touristAttractions.add(new TouristAttraction("Den Lille Havfrue", "Ikonisk bronzestatue inspireret af H.C. Andersens eventyr."));
-        touristAttractions.add(new TouristAttraction("Nyhavn", "Farverig havnepromenade med restauranter, barer og historiske skibe."));
-        touristAttractions.add(new TouristAttraction("Rosenborg Slot", "Renæssanceslot, der huser de danske kronjuveler og kongelige skatte."));
-        touristAttractions.add(new TouristAttraction("Christiansborg Slot", "Regeringspalads med kongelige repræsentationslokaler og tårn med udsigt."));
-        touristAttractions.add(new TouristAttraction("Rundetårn", "Historisk tårn fra 1600-tallet med en spiralrampe og flot udsigt over byen."));
+        touristAttractions.add(new TouristAttraction("Tivoli", "Historisk forlystelsespark med rutsjebaner, smukke haver og underholdning.", List.of("Børnevenlig", "Forlystelser", "Historisk")));
+        touristAttractions.add(new TouristAttraction("Den Lille Havfrue", "Ikonisk bronzestatue inspireret af H.C. Andersens eventyr.",List.of("Børnevenlig", "Forlystelser", "Historisk")));
+        touristAttractions.add(new TouristAttraction("Nyhavn", "Farverig havnepromenade med restauranter, barer og historiske skibe.",List.of("Børnevenlig", "Forlystelser", "Historisk")));
+        touristAttractions.add(new TouristAttraction("Rosenborg Slot", "Renæssanceslot, der huser de danske kronjuveler og kongelige skatte.",List.of("Børnevenlig", "Forlystelser", "Historisk")));
+        touristAttractions.add(new TouristAttraction("Christiansborg Slot", "Regeringspalads med kongelige repræsentationslokaler og tårn med udsigt.",List.of("Børnevenlig", "Forlystelser", "Historisk")));
+        touristAttractions.add(new TouristAttraction("Rundetårn", "Historisk tårn fra 1600-tallet med en spiralrampe og flot udsigt over byen.",List.of("Børnevenlig", "Forlystelser", "Historisk")));
     }
 
 
