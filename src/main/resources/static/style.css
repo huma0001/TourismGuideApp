@@ -6,11 +6,20 @@ body {
     padding: 0;
 }
 
+main {
+    padding-top: 80px;
+}
+
 header {
     background-color: #004080;
     color: white;
     padding: 20px;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 h1 {
@@ -36,6 +45,7 @@ h1 {
     display: flex;
     align-items: center;
     gap: 15px;
+    justify-content: space-between;
 }
 
 .attraction img {
@@ -62,6 +72,20 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.tags {
+    margin-left: auto;
+}
+
+.tag {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    transition: background-color 0.3s;
 }
 
 footer{
